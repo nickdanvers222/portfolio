@@ -3,14 +3,21 @@ import synthwave from '../assets/synthwave.jpg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-import ProjectItem from './ProjectItem'
-import recipeCapLogo from '../assets/logo2.png'
-import logo from '../logo192.png'
-import Gallery from './Carousel.js'
 import { Navbar, Nav } from 'react-bootstrap';
 
-var Carousel = require('react-responsive-carousel').Carousel;
+import ProjectItem from './ProjectItem'
+// import recipeCapLogo from '../assets/logo2.png'
+import logo from '../assets/resized.png'
+// const logo = require('../assets/resized.png');
+// import Gallery from './Carousel.js'
+
+// var Carousel = require('react-responsive-carousel').Carousel;
+let recipeCapture = {
+  title:'Recipe Capture',
+  description:'Recipe Capture is a React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they take pictures of, amazing!',
+  url:'https://github.com/Ravenor222/Recipe-Capture'
+}
+
 
 
 function App() {
@@ -33,7 +40,8 @@ function App() {
         <img src={synthwave} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} />
 
         <h2 style={{marginBottom:'5vh'}} >Projects</h2>
-        <ProjectItem />
+        <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
+        </ProjectItem>
       </div>
 
     

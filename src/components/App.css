@@ -7,9 +7,9 @@
   pointer-events: none;
   margin-top: 5vh;
 }
-/* #e7eaf1 */
+
 .main-div {
-  background-color: #2a3246;
+  background-color: #282c34;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

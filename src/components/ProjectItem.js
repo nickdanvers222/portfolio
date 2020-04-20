@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Image } from 'react-bootstrap';
-import logo from '../assets/resized.png'
-const ProjectItem = () => {
+import './ProjectItem.css'
 
+const ProjectItem = (props) => {
+const [state, setState] = useState('')
+const {title, description } = props
 
 
     return (
-        <div className='project-item' style={ProjectItemStyles}>
-            <Image src={logo} />
+        <div className='project-item' onClick={()=>{window.open(props.url)}}>
+            <Image className='project-item-image' src={props.src}/>
+            <h2 className='project-item-title' >{title}</h2>
+            <h4 className='project-item-description' >{description}</h4>
         </div>
 
     )
@@ -15,14 +19,3 @@ const ProjectItem = () => {
 
 export default ProjectItem
 
-const ProjectItemStyles = {
-    border:'2px solid black',
-    borderRadius:180,
-    width:'60vw',
-    height:'250px',
-    display:'flex'
-};
-
-const ProjectItemImage = {
-
-}
