@@ -5,10 +5,11 @@
 .App-logo {
   height: 80vh;
   pointer-events: none;
+  margin-top: 5vh;
 }
-
+/* #e7eaf1 */
 .main-div {
-  background-color: #282c34;
+  background-color: #2a3246;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

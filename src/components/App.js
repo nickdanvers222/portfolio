@@ -1,13 +1,15 @@
 import React from 'react';
 import synthwave from '../assets/synthwave.jpg';
-import recipeCapLogo from '../assets/logo2.png'
-import logo from '../logo192.png'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import ProjectItem from './ProjectItem'
+import recipeCapLogo from '../assets/logo2.png'
+import logo from '../logo192.png'
 import Gallery from './Carousel.js'
 import { Navbar, Nav } from 'react-bootstrap';
+
 var Carousel = require('react-responsive-carousel').Carousel;
 
 
@@ -31,15 +33,7 @@ function App() {
         <img src={synthwave} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} />
 
         <h2 style={{marginBottom:'5vh'}} >Projects</h2>
-        {/* <Carousel>
-          <div className='carousel' >
-            <img src={recipeCapLogo} alt='' />
-           <p className='legend'>Recipe Capture</p>
-          </div>
-          
-     
-        </Carousel> */}
-        <Gallery />
+        <ProjectItem />
       </div>
 
     
