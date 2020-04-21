@@ -6,7 +6,7 @@ const [state, setState] = useContext(ContactContext)
 
         const handleChange = async (event)=>{
             let val = event.target.value
-            await setState(prevState => ({...prevState, email: val}))
+            await setState(prevState => ({...prevState, name: val}))
             console.log(state)
         }
 

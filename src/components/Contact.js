@@ -1,9 +1,10 @@
 import React,{useContext} from 'react';
 import { Form, Button } from 'react-bootstrap';
-import EmailInput from './EmailInput'
-import NameInput from './NameInput'
-import MessageInput from './MessageInput'
-import './Contact.css'
+import EmailInput from './EmailInput';
+import NameInput from './NameInput';
+import MessageInput from './MessageInput';
+import ButtonInput from './ButtonInput';
+import './Contact.css';
 import { ContactContextProvider, ContactContext } from '../context/contactContext';
 
 const ContactMe = () => {
@@ -26,7 +27,8 @@ const ContactMe = () => {
             <EmailInput state={state} setState={setState}/>
             <p>message:</p>
             <MessageInput />
-            <Button onSubmit={()=>{console.log("ive been submitted")}}>Send</Button>
+            <ButtonInput />
+            {/* <Button onSubmit={()=>{console.log("ive been submitted")}}>Send</Button> */}
           </ContactContextProvider>
         </div>
     )
