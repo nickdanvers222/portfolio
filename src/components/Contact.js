@@ -1,5 +1,6 @@
 import React,{useContext} from 'react';
 import { Form, Button } from 'react-bootstrap';
+import EmailInput from './EmailInput'
 import './Contact.css'
 import { ContactContextProvider, ContactContext } from '../context/contactContext';
 
@@ -16,7 +17,8 @@ const ContactMe = () => {
     return(
         <div className='contact-div'>
             <ContactContextProvider>
-          
+          <p>Contact me!</p>
+          <EmailInput />
           </ContactContextProvider>
         </div>
     )
