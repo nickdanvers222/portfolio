@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { ContactContext } from '../context/contactContext'
 
-const EmailInput = (props) => {
+const NameInput = () => {
 const [state, setState] = useContext(ContactContext)
 
         const handleChange = async (event)=>{
@@ -14,9 +14,8 @@ const [state, setState] = useContext(ContactContext)
 
     return (
         <div>
-         
           <input type="text" onChange={handleChange} />
         </div>
     )
 }
-export default EmailInput
+export default NameInput
