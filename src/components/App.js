@@ -4,10 +4,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Navbar, Nav } from 'react-bootstrap';
-
 import ProjectItem from './ProjectItem'
-// import recipeCapLogo from '../assets/logo2.png'
 import logo from '../assets/resized.png'
+import ContactMe from './Contact'
+
+// import recipeCapLogo from '../assets/logo2.png'
 // const logo = require('../assets/resized.png');
 // import Gallery from './Carousel.js'
 
@@ -42,6 +43,7 @@ function App() {
         <h2 style={{marginBottom:'5vh'}} >Projects</h2>
         <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
         </ProjectItem>
+        <ContactMe />
       </div>
 
     
