@@ -7,7 +7,7 @@ const ButtonInput = () => {
 const [state, setState] = useContext(ContactContext);
 
     const submitMessage = () => {
-        axios.post('http://localhost:3001/email', {data:'hello kind sir'})
+        axios.post('http://localhost:3001/email', {data:state})
     }
 
 
