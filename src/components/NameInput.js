@@ -14,7 +14,7 @@ const [state, setState] = useContext(ContactContext)
 
     return (
         <div>
-          <input type="text" onChange={handleChange} />
+          <input className='contact-input' value={state.name} type="text" onChange={handleChange} />
         </div>
     )
 }

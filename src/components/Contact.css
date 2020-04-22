@@ -1,7 +1,44 @@
 .contact-div {
-  border: 2px solid #bebebe;
+  background-color: #f7d240;
   border-radius: 30px;
-  height: 40vh;
+  height: 55vh;
   width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vh;
+}
+
+.input-label {
+  margin: 0;
+  margin-top: 2vh;
+  font-family: 'Oswald';
+  color: black;
+}
+
+.contact-input {
+  border-radius: 6px;
+  border: 0;
+}
+
+.contact-message {
+  border-radius: 6px;
+  border: 0;
+  overflow: auto;
+  resize: none;
+}
+
+.input-title {
+  color: black;
 }
 /*# sourceMappingURL=Contact.css.map */

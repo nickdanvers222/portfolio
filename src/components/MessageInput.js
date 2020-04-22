@@ -14,7 +14,7 @@ const handleChange = async (event)=>{
 
     return (
         <div>
-          <textarea type="text" onChange={handleChange} />
+          <textarea className='contact-message' value={state.message} type="text" onChange={handleChange} />
         </div>
     )
 }

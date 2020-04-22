@@ -7,8 +7,11 @@ const ButtonInput = () => {
 const [state, setState] = useContext(ContactContext);
 
 
-    const submitMessage = () => {
-        axios.post('http://localhost:3001/email', {data:state})
+    const submitMessage = async () => {
+        axios.post('http://localhost:3001/email', {data:state});
+        // modal? 
+        await setState(prevState => ({email:'', name:'', message:''}))
+        alert('Your email has been sent!')
     }
 
 

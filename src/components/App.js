@@ -7,7 +7,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import ProjectItem from './ProjectItem'
 import logo from '../assets/resized.png'
 import ContactMe from './Contact'
-
+import '../fonts/Oswald-VariableFont_wght.ttf'
 // import recipeCapLogo from '../assets/logo2.png'
 // const logo = require('../assets/resized.png');
 // import Gallery from './Carousel.js'

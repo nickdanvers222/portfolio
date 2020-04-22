@@ -20,12 +20,12 @@ const ContactMe = () => {
     return(
         <div className='contact-div'>
           <ContactContextProvider>
-            <h4>Contact me!</h4>
-            <p>name:</p>
+            <h4 className='input-title'>Contact me!</h4>
+            <p className='input-label'>name:</p>
             <NameInput />
-            <p>email:</p>
+            <p className='input-label'>email:</p>
             <EmailInput state={state} setState={setState}/>
-            <p>message:</p>
+            <p className='input-label'>message:</p>
             <MessageInput />
             <ButtonInput />
             {/* <Button onSubmit={()=>{console.log("ive been submitted")}}>Send</Button> */}
