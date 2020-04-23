@@ -22,8 +22,8 @@
 .input-label {
   margin: 0;
   margin-top: 2vh;
-  font-family: 'Oswald';
   color: black;
+  font-weight: 600;
 }
 
 .contact-input {
@@ -40,5 +40,10 @@
 
 .input-title {
   color: black;
+  font-weight: 600;
+}
+
+.input-button {
+  margin-top: 4vh;
 }
 /*# sourceMappingURL=Contact.css.map */

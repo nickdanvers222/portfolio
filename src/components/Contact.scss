@@ -13,8 +13,9 @@
 .input-label {
     margin:0;
     margin-top:2vh;
-    font-family:'Oswald';
+    // font-family:'Oswald';
     color:black;
+    font-weight: 600;
 }
 .contact-input {
     border-radius: 6px;
@@ -28,4 +29,9 @@
 }
 .input-title {
     color:black;
+    font-weight: 600;
+
+}
+.input-button {
+    margin-top: 4vh;
 }

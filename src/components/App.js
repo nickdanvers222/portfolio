@@ -1,13 +1,15 @@
 import React from 'react';
 import synthwave from '../assets/synthwave.jpg';
+import landscape from '../assets/landscape.jpeg'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Navbar, Nav } from 'react-bootstrap';
 import ProjectItem from './ProjectItem'
-import logo from '../assets/resized.png'
+import logo from '../assets/logo300.png'
 import ContactMe from './Contact'
-import '../fonts/Oswald-VariableFont_wght.ttf'
+import '../fonts/Acme-Regular.ttf'
+import Landing from './Landing'
 // import recipeCapLogo from '../assets/logo2.png'
 // const logo = require('../assets/resized.png');
 // import Gallery from './Carousel.js'
@@ -18,6 +20,12 @@ let recipeCapture = {
   description:'Recipe Capture is a React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they take pictures of, amazing!',
   url:'https://github.com/Ravenor222/Recipe-Capture'
 }
+let scheduler = {
+  title:'React Scheduler',
+  description:'The React Scheduler is a time management platform that allows a fictional set of students access to scheduling meetings/appointments with different staff members ',
+  url:'https://github.com/Ravenor222/react-scheduler'
+}
+
 
 
 
@@ -37,11 +45,14 @@ function App() {
      </Nav>
      </Navbar.Collapse>
     </Navbar>
+        {/* <img src={landscape} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} /> */}
+        <Landing src={landscape} />
       <div className="main-div">
-        <img src={synthwave} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} />
 
-        <h2 style={{marginBottom:'5vh'}} >Projects</h2>
+        <h2 className='project-header' >Projects</h2>
         <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
+        </ProjectItem>
+        <ProjectItem title={scheduler.title} description={scheduler.description} src={logo} url={scheduler.url}>
         </ProjectItem>
         <ContactMe />
       </div>

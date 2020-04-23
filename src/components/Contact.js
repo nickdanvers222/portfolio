@@ -21,11 +21,11 @@ const ContactMe = () => {
         <div className='contact-div'>
           <ContactContextProvider>
             <h4 className='input-title'>Contact me!</h4>
-            <p className='input-label'>name:</p>
+            <p className='input-label'>Name</p>
             <NameInput />
-            <p className='input-label'>email:</p>
+            <p className='input-label'>Email</p>
             <EmailInput state={state} setState={setState}/>
-            <p className='input-label'>message:</p>
+            <p className='input-label'>Message</p>
             <MessageInput />
             <ButtonInput />
             {/* <Button onSubmit={()=>{console.log("ive been submitted")}}>Send</Button> */}

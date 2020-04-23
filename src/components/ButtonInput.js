@@ -17,7 +17,7 @@ const [state, setState] = useContext(ContactContext);
 
     return(
         <div>
-            <Button onClick={submitMessage} >submit</Button>
+            <Button  className='input-button' onClick={submitMessage} >submit</Button>
         </div>
     )
 }
