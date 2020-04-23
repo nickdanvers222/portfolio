@@ -5,11 +5,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Navbar, Nav } from 'react-bootstrap';
-import ProjectItem from './ProjectItem'
+import PortfolioItem from './PortfolioItem'
 import logo from '../assets/logo300.png'
 import ContactMe from './Contact'
 import '../fonts/Acme-Regular.ttf'
-import Landing from './Landing'
+import Landing from './Landing';
+import GlobalFonts from '../fonts/fonts';
+
 // import recipeCapLogo from '../assets/logo2.png'
 // const logo = require('../assets/resized.png');
 // import Gallery from './Carousel.js'
@@ -45,15 +47,19 @@ function App() {
      </Nav>
      </Navbar.Collapse>
     </Navbar>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
         {/* <img src={landscape} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} /> */}
         <Landing src={landscape} />
       <div className="main-div">
-
-        <h2 className='project-header' >Projects</h2>
-        <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
-        </ProjectItem>
-        <ProjectItem title={scheduler.title} description={scheduler.description} src={logo} url={scheduler.url}>
-        </ProjectItem>
+        <div className='project-container'>
+         <h2 className='project-header' >PROJECTS</h2>
+         <p className='project-header'> These various projects were developed with new languages to expand my skill set</p>
+        </div>
+        <PortfolioItem />
+        {/* <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
+        </ProjectItem> */}
+        {/* <ProjectItem title={scheduler.title} description={scheduler.description} src={logo} url={scheduler.url}>
+        </ProjectItem> */}
         <ContactMe />
       </div>
 

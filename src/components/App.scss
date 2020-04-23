@@ -1,7 +1,7 @@
 .App {
     text-align: center;
-    background-color: #282c34;
-
+    background-color: #ffffff;
+    font-family: 'Acme', sans-serif;
   }
   
   .App-logo {
@@ -25,7 +25,10 @@
   .App-link {
     color: #61dafb;
   }
-  
-    // .project-header{
 
-    // }
+  .project-header{
+    color:black;
+    align-self: center;  
+  }
+  
+  

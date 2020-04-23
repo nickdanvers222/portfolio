@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #ffffff;
+  font-family: 'Acme', sans-serif;
 }
 
 .App-logo {
@@ -30,5 +31,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.project-header {
+  color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=App.css.map */
