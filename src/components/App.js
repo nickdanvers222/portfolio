@@ -10,7 +10,7 @@ import logo from '../assets/logo300.png'
 import ContactMe from './Contact'
 import '../fonts/Acme-Regular.ttf'
 import Landing from './Landing';
-import GlobalFonts from '../fonts/fonts';
+import iphone from '../assets/RCiphone.png'
 
 // import recipeCapLogo from '../assets/logo2.png'
 // const logo = require('../assets/resized.png');
@@ -19,8 +19,10 @@ import GlobalFonts from '../fonts/fonts';
 // var Carousel = require('react-responsive-carousel').Carousel;
 let recipeCapture = {
   title:'Recipe Capture',
-  description:'Recipe Capture is a React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they take pictures of, amazing!',
-  url:'https://github.com/Ravenor222/Recipe-Capture'
+  description:'A React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they take pictures of, amazing!',
+  url:'https://github.com/Ravenor222/Recipe-Capture',
+  color:'lightsalmon',
+  photo:iphone,
 }
 let scheduler = {
   title:'React Scheduler',
@@ -55,7 +57,7 @@ function App() {
          <h2 className='project-header' >PROJECTS</h2>
          <p className='project-header'> These various projects were developed with new languages to expand my skill set</p>
         </div>
-        <PortfolioItem />
+        <PortfolioItem item={recipeCapture}/>
         {/* <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
         </ProjectItem> */}
         {/* <ProjectItem title={scheduler.title} description={scheduler.description} src={logo} url={scheduler.url}>
