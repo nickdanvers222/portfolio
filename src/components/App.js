@@ -11,8 +11,9 @@ import '../fonts/Acme-Regular.ttf'
 import Landing from './Landing';
 import iphone from '../assets/RCiphone.png'
 import laptop from '../assets/scheduler2.png'
-
+import { NavContextProvider }from '../context/NavContext'
 import Nav from './Header/Nav'
+import VizSensor from 'react-visibility-sensor';
 
 let recipeCapture = {
   title:'Recipe Capture',
@@ -32,56 +33,44 @@ let scheduler = {
 }
 
 function App() {
+  
 
 
 
-
-
-/////////////
-const [isSticky, setSticky] = useState(false)
-
-const stickyRef = useRef(null)
-const handleScroll = () => {
-  if (stickyRef.current) {
-  window.pageYOffset > stickyRef.current.getBoundingClientRect().bottom
-  ? setSticky(true)
-  : setSticky(false);
-  }
-  };
-
-useEffect(()=> {
-  return () => {
-    window.removeEventListener("scroll", () => handleScroll)
-  }
-}, []);
-window.addEventListener("scroll", handleScroll)
-/////////////
-
-
-
-
-  // const handleScroll = () => {
-  //   window.pageYOffset > '100vh'
-  //     ? console.log('A test')
-  //     : console.log('B test', window.pageYOffset)
-  // }
-
-  // yOffset = window.pageYOffset;
   return (
     <div className="App">
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
 
+       <NavContextProvider>
+        <Landing  src={landscape} />
+
+
 
         {/* <img src={landscape} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} /> */}
+        {/* <Nav /> */}
+      <div className="main-div">
+        <div className='project-container'>
+         <h2 className='project-header' >PROJECTS</h2>
+         <p  className='project-header'> These various projects were developed with new languages to expand my skill set</p>
+        </div>
+        <PortfolioItem item={recipeCapture}/>
+        <div ></div>
+        <PortfolioItem item={scheduler}/>
+        <ContactMe />
+      </div>
+        </NavContextProvider>
 
-        <Landing  src={landscape} />
-        <Nav sticky={isSticky} />
+    
+    </div>
+  );
+}
 
-        {/* <div className='navbar'></div> */}
+export default App;
+
+// style={{height:'50vh', width:'50vw'}}
 
 
-
-    {/* <Navbar style={{backgroundColor:'transparent'}}>
+    /* <Navbar style={{backgroundColor:'transparent'}}>
       <Navbar.Brand href="#home">Nicholas Danvers</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
      <Navbar.Collapse id="basic-navbar-nav">
@@ -93,28 +82,24 @@ window.addEventListener("scroll", handleScroll)
       <Nav.Link href="#link">Contact me</Nav.Link>
      </Nav>
      </Navbar.Collapse>
-    </Navbar> */}
-      <div className="main-div">
-        <div className='project-container'>
-         <h2 className='project-header' >PROJECTS</h2>
-         <p  className='project-header'> These various projects were developed with new languages to expand my skill set</p>
-        </div>
-        <PortfolioItem item={recipeCapture}/>
-        <div ref={stickyRef}></div>
-        <PortfolioItem item={scheduler}/>
+    </Navbar> */
 
-        {/* <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
-        </ProjectItem> */}
-        {/* <ProjectItem title={scheduler.title} description={scheduler.description} src={logo} url={scheduler.url}>
-        </ProjectItem> */}
-        <ContactMe />
-      </div>
+    // /////////////
+// const [isSticky, setSticky] = useState(false)
 
-    
-    </div>
-  );
-}
+// const stickyRef = useRef(null)
+// const handleScroll = () => {
+//   if (stickyRef.current) {
+//   window.pageYOffset > stickyRef.current.getBoundingClientRect().bottom
+//   ? setSticky(true)
+//   : setSticky(false);
+//   }
+//   };
 
-export default App;
-
-// style={{height:'50vh', width:'50vw'}}
+// useEffect(()=> {
+//   return () => {
+//     window.removeEventListener("scroll", () => handleScroll)
+//   }
+// }, []);
+// window.addEventListener("scroll", handleScroll)
+/////////////
