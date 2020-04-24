@@ -21,7 +21,6 @@
 }
 
 .portfolio-item-image {
-  background-image: url("../assets/RCiphone.png");
   background-size: cover;
   -ms-grid-row: 2;
       grid-row-start: 2;
@@ -36,6 +35,10 @@
 .portfolio-item-button {
   background-color: transparent;
   color: black;
-  border: 1px solid lightsalmon;
+}
+
+.portfolio-item-stack {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 /*# sourceMappingURL=PortfolioItem.css.map */

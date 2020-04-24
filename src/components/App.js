@@ -11,7 +11,7 @@ import ContactMe from './Contact'
 import '../fonts/Acme-Regular.ttf'
 import Landing from './Landing';
 import iphone from '../assets/RCiphone.png'
-
+import laptop from '../assets/scheduler2.png'
 // import recipeCapLogo from '../assets/logo2.png'
 // const logo = require('../assets/resized.png');
 // import Gallery from './Carousel.js'
@@ -19,15 +19,19 @@ import iphone from '../assets/RCiphone.png'
 // var Carousel = require('react-responsive-carousel').Carousel;
 let recipeCapture = {
   title:'Recipe Capture',
-  description:'A React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they take pictures of, amazing!',
+  stack:'React-Native, Express, Clarifai & Spoonacular',
+  description:"A React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they've taken a picture of, amazing!",
   url:'https://github.com/Ravenor222/Recipe-Capture',
   color:'lightsalmon',
   photo:iphone,
 }
 let scheduler = {
-  title:'React Scheduler',
-  description:'The React Scheduler is a time management platform that allows a fictional set of students access to scheduling meetings/appointments with different staff members ',
-  url:'https://github.com/Ravenor222/react-scheduler'
+  title:'Interview Scheduler',
+  stack:'React JS, PSQL, SCSS, Express',
+  description:'A time management platform that allows a fictional set of students access to scheduling meetings/appointments with different staff members ',
+  url:'https://github.com/Ravenor222/react-scheduler',
+  color:'#222f3e',
+  photo:laptop
 }
 
 
@@ -58,6 +62,8 @@ function App() {
          <p className='project-header'> These various projects were developed with new languages to expand my skill set</p>
         </div>
         <PortfolioItem item={recipeCapture}/>
+        <PortfolioItem item={scheduler}/>
+
         {/* <ProjectItem title={recipeCapture.title} description={recipeCapture.description} src={logo} url={recipeCapture.url}>
         </ProjectItem> */}
         {/* <ProjectItem title={scheduler.title} description={scheduler.description} src={logo} url={scheduler.url}>
