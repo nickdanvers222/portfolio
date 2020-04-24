@@ -5,7 +5,7 @@ const NavContext = createContext([{}, () => {}]);
 const  NavContextProvider = (props) => {
 
   const [state, setState] = useState({
-    visibility: false
+    visibility: false,
   });
 
   return (

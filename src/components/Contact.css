@@ -1,7 +1,6 @@
 .contact-div {
   background-color: #f7d240;
   border-radius: 30px;
-  height: 55vh;
   width: 25vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,10 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 .input-label {
@@ -41,9 +37,10 @@
 .input-title {
   color: black;
   font-weight: 600;
+  margin-top: 1vh;
 }
 
 .input-button {
-  margin-top: 4vh;
+  margin-bottom: 2vh;
 }
 /*# sourceMappingURL=Contact.css.map */

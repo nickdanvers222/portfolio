@@ -39,4 +39,9 @@
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=App.css.map */

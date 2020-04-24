@@ -7,11 +7,16 @@ import Nav from '../components/Header/Nav'
 
 const Landing = (props) => {
     const [state, setState] = useContext(NavContext)
-    const { visibility } = state
-  
+    const navigation = () => {
+        document.querySelector('#project').scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      };
+
+
     return (
        
-       <div className='landing-div'>
+       <div id='home' className='landing-div'>
             {/* <img src={props.src} className="App-logo" alt="logo" style={{marginBottom:'5vh'}} /> */}
             
             <VizSensor
@@ -26,7 +31,7 @@ const Landing = (props) => {
 
             <h1 className='landing-text landing-text-name'>Nicholas Danvers</h1>
             <h2 className='landing-text'>Full-Stack Web Developer based in Vancouver, BC</h2>
-            <button className='landing-button'>Check out my work</button>
+            <button className='landing-button' onClick={navigation}>Check out my work</button>
             <Nav></Nav>
             </div>
             </VizSensor>

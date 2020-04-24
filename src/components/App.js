@@ -5,15 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Navbar, Nav } from 'react-bootstrap';
 import PortfolioItem from './PortfolioItem'
-import logo from '../assets/logo300.png'
 import ContactMe from './Contact'
 import '../fonts/Acme-Regular.ttf'
 import Landing from './Landing';
 import iphone from '../assets/RCiphone.png'
 import laptop from '../assets/scheduler2.png'
 import { NavContextProvider }from '../context/NavContext'
-import Nav from './Header/Nav'
-import VizSensor from 'react-visibility-sensor';
+import About from './About'
+import Footer from './Footer'
 
 let recipeCapture = {
   title:'Recipe Capture',
@@ -42,7 +41,7 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
 
        <NavContextProvider>
-        <Landing  src={landscape} />
+        <Landing src={landscape} />
 
 
 
@@ -56,7 +55,9 @@ function App() {
         <PortfolioItem item={recipeCapture}/>
         <div ></div>
         <PortfolioItem item={scheduler}/>
+        <About />
         <ContactMe />
+        <Footer />
       </div>
         </NavContextProvider>
 

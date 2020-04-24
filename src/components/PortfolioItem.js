@@ -29,7 +29,7 @@ const PortfolioItem = (props) => {
 
 
     return (
-        <div className='portfolio-item' >
+        <div id='project' className='portfolio-item' >
             <div className='portfolio-item-text'>
                 <h1 style={{borderBottom:`1px solid ${props.item.color}`}}>{props.item.title}</h1>
                     <h3 className='portfolio-item-stack'>{props.item.stack}</h3>

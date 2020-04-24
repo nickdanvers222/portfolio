@@ -18,7 +18,7 @@ const ContactMe = () => {
 
 
     return(
-        <div className='contact-div'>
+        <div id='contact' className='contact-div'>
           <ContactContextProvider>
             <h4 className='input-title'>Contact me!</h4>
             <p className='input-label'>Name</p>
