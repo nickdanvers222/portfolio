@@ -11,12 +11,7 @@ const PortfolioItem = (props) => {
     const handleInput = (event) => {
         window.open(props.item.url);
     }
-    const buttonStyle = {
-        border:`1px solid ${props.item.color}`,
-        "&:hover": {
-            backgroundColor: "white"
-          },
-    }
+    
     const Styled = styled.button`
         background-color:white;
         border:0;

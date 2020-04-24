@@ -4,8 +4,8 @@
   border-bottom: 1px solid #e2e1e0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
+  -ms-grid-columns: 20% 20% 20% 22% 18%;
+      grid-template-columns: 20% 20% 20% 22% 18%;
   -ms-grid-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
       grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
 }
