@@ -1,11 +1,18 @@
 .contact-container {
     width: 100vw;
-    height:30vh;
+    height:35vh;
     background-color:lightsalmon;
     padding:2vh;
 }
 
-
+.contact-icon {
+    background-color:transparent;
+    height:4.5vh;
+    width:2vw;
+    background-size:cover;
+    border-radius:15%;
+    margin:1vh;
+}
 
 .sendto-button {
     background-color:transparent;
@@ -19,4 +26,11 @@
     border-radius:5px;
     padding:1vh;
     
+}
+.social-row {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color:transparent;
+    margin:1vw;
 }

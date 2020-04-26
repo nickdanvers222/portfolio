@@ -1,8 +1,17 @@
 .contact-container {
   width: 100vw;
-  height: 30vh;
+  height: 35vh;
   background-color: lightsalmon;
   padding: 2vh;
+}
+
+.contact-icon {
+  background-color: transparent;
+  height: 4.5vh;
+  width: 2vw;
+  background-size: cover;
+  border-radius: 15%;
+  margin: 1vh;
 }
 
 .sendto-button {
@@ -16,5 +25,20 @@
   text-shadow: 1px 1px black;
   border-radius: 5px;
   padding: 1vh;
+}
+
+.social-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  margin: 1vw;
 }
 /*# sourceMappingURL=MailTo.css.map */

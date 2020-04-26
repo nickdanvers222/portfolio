@@ -16,8 +16,9 @@
 }
 .aboutme-image {
     background-image:url('../assets/nick.jpg');
-    height:25vh;
-    width:12vw;
+    background-size: cover;
+    height:20vh;
+    width:10vw;
     border-radius:50%;
     border:2px solid lightsalmon;
     margin:2vh;

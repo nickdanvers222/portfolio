@@ -8,7 +8,7 @@ import ipad from '../assets/otg1.png'
 const recipeCapture = {
     title:'Recipe Capture',
     stack:'React-Native, Express, Clarifai & Spoonacular',
-    description:"A React Native application which uses the clarifai and spoonacular API to serve a user recipes for the ingredients they've taken a picture of, amazing!",
+    description:"A React-Native application which uses the Clarifai and Spoonacular API to find recipes for the user based on ingredients they have photographed.",
     url:'https://github.com/Ravenor222/Recipe-Capture',
     color:'lightsalmon',
     photo:iphone,
@@ -16,7 +16,7 @@ const recipeCapture = {
   const scheduler = {
     title:'Interview Scheduler',
     stack:'React JS, PSQL, SCSS, Express',
-    description:'A time management platform that allows a fictional set of students access to scheduling meetings/appointments with different staff members ',
+    description:'A time management platform that allows a fictional set of students access to scheduling meetings and appointments with different staff members ',
     url:'https://github.com/Ravenor222/react-scheduler',
     color:'#222f3e',
     photo:laptop

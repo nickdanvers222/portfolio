@@ -29,8 +29,8 @@ const Landing = (props) => {
             <div className='landing-image'>
 
             <h1 className='landing-text landing-text-name'>Nicholas Danvers</h1>
-            <h2 className='landing-text'>Full-Stack Web Developer based in Vancouver, BC</h2>
-            <button className='landing-button' onClick={navigation}>Check out my work</button>
+            <h2 className='landing-text'>Full-Stack Web Developer Based in Vancouver, BC</h2>
+            <button className='landing-button' onClick={navigation}>View my work</button>
             
             </div>
             </VizSensor>
