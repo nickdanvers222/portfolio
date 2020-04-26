@@ -1,6 +1,6 @@
 import iphone from '../assets/RCiphone.png'
 import laptop from '../assets/scheduler2.png'
-import ipad from '../assets/onthego1.png'
+import ipad from '../assets/otg1.png'
 
 
 
