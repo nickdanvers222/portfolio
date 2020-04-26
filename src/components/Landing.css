@@ -14,8 +14,8 @@
           align-items: center;
   background-image: url("../assets/landscape.jpeg");
   background-size: cover;
-  width: 100%;
-  height: 94vh;
+  width: 100vw;
+  height: 100vh;
   -webkit-box-shadow: inset 0 0 0 1000px #ffa07a9c;
           box-shadow: inset 0 0 0 1000px #ffa07a9c;
 }

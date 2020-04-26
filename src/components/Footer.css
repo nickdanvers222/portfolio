@@ -15,3 +15,24 @@
     font-size:0.40em;
     opacity:0.8
 }
+.footer-packages {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom:3vh;
+}
+/* .bootstrap-package {
+    height:6vh;
+    width:4vw;   
+    background-size:cover;
+    background-color:transparent;
+    cursor:pointer;
+} */
+
+.package {
+    height:6vh;
+    width:4vw;   
+    background-size:cover;
+    background-color:transparent;
+    cursor:pointer;
+}

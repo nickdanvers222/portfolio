@@ -37,6 +37,8 @@ function App() {
         <PortfolioItem item={recipeCapture}/>
         <div ></div>
         <PortfolioItem item={scheduler}/>
+        <PortfolioItem item={onTheGo}/>
+
         <About />
         <MailTo />
         {/* <ContactMe /> */}

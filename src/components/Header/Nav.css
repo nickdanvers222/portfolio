@@ -42,6 +42,7 @@
     background-color:white;
     color: lightsalmon;
     border-radius:50%;
+    cursor: pointer;
   }
   .navbar--logo-text {
     padding-top: 0.9vh;
@@ -53,17 +54,29 @@
 
 }
   .navbar-vision {
-
     color:lightsalmon;
+    cursor: pointer;
+    margin-left:1vw;
+    margin-right:1vw;
+    border-bottom:2px solid transparent
+    /* transition:0.5s; */
+  }
+  .navbar-vision:hover {
+    transition:0.25s;
+    border-bottom:2px solid lightsalmon;
+
   }
   .navbar--link-item {
+      cursor: pointer;
       margin-left:1vw;
-      /* transition:0.5s; */
       margin-right:1vw;
-      border-bottom:1px solid transparent
+      border-bottom:2px solid transparent
+      /* transition:0.5s; */
+
   }
   .navbar--link-item:hover {
-      border-bottom:1px solid white;
+    transition:0.25s;
+    border-bottom:2px solid white;
   }
 
   @keyframes moveDown {

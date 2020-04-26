@@ -20,13 +20,13 @@ const Nav = () => {
     {/* <nav className="navbar-sticky"> */}
 
       <div className="navbar--logo-holder">
-        <div className='navbar--logo'><p className='navbar--logo-text' > &lt;ND&gt; </p></div>
+        <div onClick={()=>{navigation('#home')}} className='navbar--logo'><p className='navbar--logo-text' > &lt;ND&gt; </p></div>
       </div>
       <ul className="navbar--link">
-        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#home')}}>Home</li>
-        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#project')}}>Projects</li>
-        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#about')}}>About</li>
-        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#contact')}}>Contact Me</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar-vision'} onClick={() => {navigation('#home')}}>Home</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar-vision'} onClick={() => {navigation('#project')}}>Projects</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar-vision'} onClick={() => {navigation('#about')}}>About</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar-vision'} onClick={() => {navigation('#contact')}}>Contact Me</li>
       </ul>
     </nav>
   )
