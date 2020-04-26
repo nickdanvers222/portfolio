@@ -39,7 +39,6 @@
   }
   .navbar--link {
     display: flex;
-    /* align-self: flex-end; */
     list-style-type: none;
 
 }

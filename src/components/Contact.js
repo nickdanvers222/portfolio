@@ -1,5 +1,4 @@
 import React,{useContext} from 'react';
-import { Form, Button } from 'react-bootstrap';
 import EmailInput from './EmailInput';
 import NameInput from './NameInput';
 import MessageInput from './MessageInput';
@@ -9,14 +8,7 @@ import { ContactContextProvider, ContactContext } from '../context/contactContex
 
 const ContactMe = () => {
     const [state, setState] = useContext(ContactContext)
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(event)
-        console.log(state)
-    }
-
-
+    
     return(
         <div id='contact' className='contact-div'>
           <ContactContextProvider>

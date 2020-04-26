@@ -26,7 +26,6 @@ const Landing = (props) => {
               console.log(state);
             }}
             >
-                {/* className={`box ${isBoxVisible ? "" : "hidden"}`} */}
             <div className='landing-image'>
 
             <h1 className='landing-text landing-text-name'>Nicholas Danvers</h1>
