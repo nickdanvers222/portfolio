@@ -1,6 +1,17 @@
 .footer-container {
-    background-color:#efb59d;
-    height:15vh;
+    background-color:#252525;
+    height:30vh;
     width:100vw;
-    margin-top:4vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+.copyright {
+    font-size:0.5em;
+    opacity:0.8
+
+}
+.mentions {
+    font-size:0.40em;
+    opacity:0.8
 }

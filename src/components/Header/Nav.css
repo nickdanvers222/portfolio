@@ -1,21 +1,24 @@
-.navbar {
+
+  .second-navbar {
+    flex-direction: row;
+    height:7vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0.5rem 2.5rem;
-    /* height:20px; */
-    position:absolute;
-    bottom:0;
-    margin-bottom: 2vh;
-    /* z-index: 1; */
+    transition: 0.125s;
     width: 100%;
-    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: moveDown 0.5s ease-in-out;
     color:white;
-  }
+    background-color:white;
+    transition: 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
   
   .navbar-sticky {
     flex-direction: row;
-    background: #333;
     height:7vh;
     display: flex;
     align-items: center;
@@ -25,25 +28,37 @@
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 1px 1px 1px #222;
     animation: moveDown 0.5s ease-in-out;
     color:white;
-    background-color:#efb59d;
+    background-color:transparent;
 }
   
   .navbar--logo {
-    width: 2rem;
-    height: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-size: cover; 
     margin-right: 0.5rem;
     animation: rotate 0.7s ease-in-out 0.5s;
+    background-color:white;
+    color: lightsalmon;
+    border-radius:50%;
+  }
+  .navbar--logo-text {
+    padding-top: 0.9vh;
   }
   .navbar--link {
     display: flex;
+    /* align-self: flex-end; */
     list-style-type: none;
 
 }
+  .navbar-vision {
+
+    color:lightsalmon;
+  }
   .navbar--link-item {
       margin-left:1vw;
+      /* transition:0.5s; */
       margin-right:1vw;
       border-bottom:1px solid transparent
   }

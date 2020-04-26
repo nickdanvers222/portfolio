@@ -1,6 +1,7 @@
 import React, {useContext} from "react"
 import "./Nav.css"
-import { NavContext } from '../../context/NavContext'
+import { NavContext } from '../../context/NavContext';
+import logo from '../../assets/whitelogo.png'
 
 const Nav = () => {
   const [state, useState] = useContext(NavContext);
@@ -15,15 +16,17 @@ const Nav = () => {
 
 
   return (
-    <nav className={!state.visibility ? "navbar-sticky" : "navbar"}>
+    <nav className={state.visibility ? "navbar-sticky" : "second-navbar"}>
+    {/* <nav className="navbar-sticky"> */}
+
       <div className="navbar--logo-holder">
-        <h1> NDanvers</h1>
+        <div className='navbar--logo'><p className='navbar--logo-text' > &lt;ND&gt; </p></div>
       </div>
       <ul className="navbar--link">
-        <li className="navbar--link-item" onClick={() => {navigation('#home')}}>Home</li>
-        <li className="navbar--link-item" onClick={() => {navigation('#project')}}>Projects</li>
-        <li className="navbar--link-item" onClick={() => {navigation('#about')}}>About</li>
-        <li className="navbar--link-item" onClick={() => {navigation('#contact')}}>Contact Me</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#home')}}>Home</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#project')}}>Projects</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#about')}}>About</li>
+        <li className={state.visibility ? "navbar--link-item" : 'navbar--link-item navbar-vision'} onClick={() => {navigation('#contact')}}>Contact Me</li>
       </ul>
     </nav>
   )

@@ -11,7 +11,8 @@ import { NavContextProvider }from '../context/NavContext'
 import About from './About'
 import Footer from './Footer'
 import { recipeCapture, scheduler, onTheGo, tweeter } from '../context/projects'
-
+import MailTo from './MailTo.js'
+import Nav from './Header/Nav'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
 
        <NavContextProvider>
+       <Nav></Nav>
         <Landing src={landscape} />
 
 
@@ -36,7 +38,8 @@ function App() {
         <div ></div>
         <PortfolioItem item={scheduler}/>
         <About />
-        <ContactMe />
+        <MailTo />
+        {/* <ContactMe /> */}
         <Footer />
       </div>
         </NavContextProvider>
