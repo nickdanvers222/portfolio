@@ -32,7 +32,7 @@ function App() {
       <div className="main-div">
         <div className='project-container'>
          <h2 className='project-header' >PROJECTS</h2>
-         <p  className='project-header'> These various projects were developed with new languages to expand my skill set</p>
+         <p  className='project-header'> The projects below were built with using a wide variety of frameworks and libraries to showcase and expand my skill set</p>
         </div>
         <PortfolioItem item={recipeCapture}/>
         <div ></div>

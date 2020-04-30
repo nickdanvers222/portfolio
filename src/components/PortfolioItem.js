@@ -15,7 +15,7 @@ const PortfolioItem = (props) => {
     const Styled = styled.button`
         background-color:white;
         border:0;
-        border:1px solid ${props.item.color};
+        border:2px solid ${props.item.color};
         color:black;
         font-size:0.7em;
         border-radius:5px;

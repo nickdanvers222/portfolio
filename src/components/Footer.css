@@ -4,7 +4,7 @@
     width:100vw;
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
+    justify-content:center;
 }
 .copyright {
     font-size:0.5em;
@@ -12,7 +12,7 @@
 
 }
 .mentions {
-    font-size:0.40em;
+    font-size:0.7em;
     opacity:0.8
 }
 .footer-packages {
@@ -30,8 +30,8 @@
 } */
 
 .package {
-    height:6vh;
-    width:4vw;   
+    height:7vh;
+    width:4.5vw;   
     background-size:cover;
     background-color:transparent;
     cursor:pointer;
