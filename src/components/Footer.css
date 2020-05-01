@@ -35,4 +35,25 @@
     background-size:cover;
     background-color:transparent;
     cursor:pointer;
+    margin: 1vh
+}
+
+
+.package-button-text {
+    height:3vh;
+    width:4.5vw;
+    color:white;
+    opacity:0.8;
+    font-size:0.8em;
+    margin-left:0.3vw;
+    /* margin-right:0.3vw; */
+}
+.package-anchor {
+    text-decoration: none;
+    border-bottom:1px solid transparent;
+
+}
+.package-anchor:hover {
+    border-bottom:1px solid white;
+    transition:0.5s;
 }
