@@ -17,11 +17,10 @@ const PortfolioItem = (props) => {
         border:0;
         border:2px solid ${props.item.color};
         color:black;
-        font-size:0.7em;
+        font-size:1em;
         border-radius:5px;
-        padding-top:0.25vh;
+        padding: 1vh;
         transition: 0.25s;
-        padding-bottom:0.25vh;
         &:hover {
             background-color: ${props.item.color};
             color:white;
